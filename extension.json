@@ -2,5 +2,16 @@
   "id": "colourpicker",
   "name": "Colour picker",
   "srcdoc": "index.html",
-  "fieldTypes": ["Symbol", "Text"]
+  "fieldTypes": ["Symbol", "Text"],
+  "parameters": {
+    "instance": [
+        {
+          "id": "helpText",
+          "type": "Symbol",
+          "name": "Help text",
+          "description": "Help text"
+        }
+    ],
+    "installation": []
+  }
 }
