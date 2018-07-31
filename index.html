@@ -4,11 +4,16 @@
   <meta charset="UTF-8">
   <!-- Core extensions CSS from Contentful. -->
   <link rel="stylesheet" href="//contentful.github.io/ui-extensions-sdk/cf-extension.css">
-  <!-- UI Extensions SDK -->
-  <script src="https://unpkg.com/contentful-ui-extensions-sdk@3"></script>
+
   <style>
     .cf-form-field {
-		  margin-bottom: 0;
+	margin-bottom: 0;
+    }
+    input[type="color"] {
+    	height: 50px;
+	width: 50px;
+    	border-radius: 3px;
+    	cursor: pointer;
     }
   </style>
 </head>
@@ -17,22 +22,11 @@
 <!-- Extension DOM Elements -->
 <div class="cf-form-field">
   <input type="color" class="colour-picker">
-  <input type="text" class="cf-form-input">
+  <input type="text" class="cf-form-input draft-text">
 </div>
 
 <!-- Contenful UI Extensions SDK API -->
 <script src="https://contentful.github.io/ui-extensions-sdk/cf-extension-api.js"></script>
-
-<style>
-
-  input[type="color"] {
-    height: 50px;
-    width: 50px;
-    border-radius: 3px;
-    cursor: pointer;
-  }
-
-</style>
 
 <!-- Colour Picker UI Extension -->
 <script>
